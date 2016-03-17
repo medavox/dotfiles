@@ -42,12 +42,20 @@ sed
 TurboVNC
 flux
 youtube-dl
+javac
+lvm2
+mate-users-admin
+tarsnap
 ```
 
 Small (but useful) utilities
 ----
 
 ```
+xkill
+df
+du
+diff
 source-highlight
 tr
 pv (pipeable progress indicator)
@@ -62,12 +70,29 @@ rsync
 ssh
 lshw
 sshfs
+info
+iotop
+watch
+screen
+sleep
+chmod, chown, chgrp
+killall
+zram
+modprobe
+shutdown, reboot
+passwd
+touch
+wc
+sort
+uniq
+zenity(or another dialog maker/notifier)
 ```
 
 Expected Fundamentals (not comprehensive):
 ---
 
 ```
+mount
 e2fslibs (ext2,3,4 support)
 cron/anacron
 tar
@@ -96,6 +121,7 @@ bsdutils
 bzip2
 GNU core utils (coreutils on APT)
 util-linux (contains mkfs, dmesg and many more)
+sudo & gksudo (or other graphical sudo)
 ```
 
 Extras

@@ -112,6 +112,7 @@ alias gcam="git commit -am "
 alias sz='du -ahd 1 | sort -h'
 alias countfiles='find . -type f | wc -l'
 alias caja='caja --no-desktop'
+alias pv='pv -tra'
 function search(){
 	cd /
 	find -iname $1 2>/dev/null
