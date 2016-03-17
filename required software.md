@@ -48,6 +48,7 @@ Small (but useful) utilities
 ----
 
 ```
+source-highlight
 tr
 pv (pipeable progress indicator)
 xinput
