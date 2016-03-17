@@ -41,6 +41,7 @@ lz4
 sed
 TurboVNC
 flux
+youtube-dl
 ```
 
 Small (but useful) utilities
@@ -100,7 +101,6 @@ Extras
 ----
 
 
-* cups
+* printer support - cups
 * wifi support
-	- wicd
-	- 
+

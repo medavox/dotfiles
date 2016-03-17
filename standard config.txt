@@ -1,0 +1,30 @@
+# means windows key
+
+#+F: file manager (pcmanfm)
+#+T: new terminal window
+#+W: web browser
+#+E: text editor (geany)
+#+S: package manager (synaptic)
+#+B: invert screen (using `xcalib -invert -alter`)
+#+L: Lock screen
+#+Up  : Orient Screen normally 'xrandr -o normal'
+#+Down: Orient screen upside down 'xrandr -o inverted'
+#+Left: Orient screen portrait with left-side being top 'xrandr -o left'
+#+Ryte: Orient screen portrait with right-side being top 'xrandr -o right'
+
+alt-F3: dmenu (as per settings)
+
+
+installed packages:
+{openbox dmenu htop obconf obmenu tint2 geany synaptic pcmanfm pv xcalib xrandr}
+
+installed files:
+/etc/nanorc
+/etc/hosts file, including vodly.to entry
+list of aliases, loaded using source (or a .) <file>
+my modified statler openbox theme from crunchbang
+geany config directory
+openbox config directory
+tint2 config
+cb-exit script, with hand-edited new shutdown and reboot entries (switched DBus command)
+xflux (`wget https://justgetflux.com/linux/xflux64.tgz; tar -xzf xflux64.tgz; ./xflux -l 54 -g 3`)
