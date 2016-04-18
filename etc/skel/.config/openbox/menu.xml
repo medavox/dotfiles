@@ -12,7 +12,7 @@
 		<item label="Terminal">
 			<action name="Execute">
 				<execute>
-					lxterminal
+					x-terminal-emulator
 				</execute>
 			</action>
 		</item>
@@ -258,13 +258,6 @@
 						</execute>
 					</action>
 				</item>
-				<item label="Wiki Page">
-					<action name="Execute">
-						<execute>
-							x-www-browser http://crunchbanglinux.org/wiki/conky
-						</execute>
-					</action>
-				</item>
 			</menu>
 			<menu id="dmenuconfig" label="dmenu">
 				<item label="Edit start-up script">
@@ -491,10 +484,13 @@
 			</action>
 		</item>
 		<item label="Exit">
-			<action name="Execute">
+			<! --<action name="Execute">
 				<execute>
 					cb-exit
 				</execute>
+			</action> -->
+			<action name="Exit">
+				<prompt>yes</prompt>
 			</action>
 		</item>
 	</menu>
