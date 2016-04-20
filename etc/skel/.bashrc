@@ -98,11 +98,6 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-#--password-file=~/rsyncpass
-#function send() { rsync  $1 quilt@highwire-dtc.com:/srv/students/quilt/rachelkeller.com/public; }
-#function receive() { rsync quilt@highwire-dtc.com:/srv/students/quilt/rachelkeller.com/public/$1 $2; }
-#alias hiwire~="quilt@highwire-dtc.com:/srv/students/quilt"
-#alias hwssh="ssh quilt@highwire-dtc.com"
 alias ziptX="ssh -XC -c blowfish-cbc"
 alias 7z7z="7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on"
 alias mount=mount | column -t
