@@ -8,13 +8,15 @@ Personally Useful Software
 
 ```
 openbox
+obconf
+lxappearance
 tint2
 dmenu (may be in a package called 'suckless-tools')
 synaptic
 gparted
 palemoon
 pcmanfm
-meld
+meld (BROKEN - last good version 1.8 series required gtk2, new versions require wilfully wasteful gtk3)
 geany
 wget
 gsmartcontrol
@@ -46,7 +48,10 @@ javac
 lvm2
 mate-users-admin
 tarsnap
+font:liberation
 ```
+
+
 
 Small (but useful) utilities
 ----
