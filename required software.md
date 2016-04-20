@@ -10,6 +10,7 @@ Personally Useful Software
 openbox
 obconf
 lxappearance
+murrine (gtk engine -- needed for nice buttons, checkboxes, scrollbars etc when using crunchbang's openbox theme)
 tint2
 dmenu (may be in a package called 'suckless-tools')
 synaptic
@@ -36,7 +37,7 @@ elinks
 eom (eye of MATE)
 mplayer
 nano
-ntfs-3g (or whatever the NTFS drivers are called)
+ntfs-3g (or whatever the read-write NTFS drivers are called)
 pandoc
 plzip
 lz4
@@ -48,10 +49,13 @@ javac
 lvm2
 mate-users-admin
 tarsnap
-font:liberation
 ```
 
-
+Fonts
+----
+liberation
+droid
+deja vu
 
 Small (but useful) utilities
 ----
