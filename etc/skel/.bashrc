@@ -96,7 +96,6 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-alias xterm='xterm -fg WHITE -bg BLACK'
 alias ziptX="ssh -XC -c blowfish-cbc"
 alias 7z7z="7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on"
 alias mount=mount | column -t
@@ -105,7 +104,7 @@ alias gs="git status"
 alias gcam="git commit -am "
 alias sz='du -ahd 1 | sort -h'
 alias countfiles='find . -type f | wc -l'
-alias caja='caja --no-desktop'
+#alias caja='caja --no-desktop'
 alias pv='pv -tra'
 function search(){
 	cd /
