@@ -56,11 +56,13 @@ Fonts
 liberation
 droid
 deja vu
+freefont
 
 Small (but useful) utilities
 ----
 
 ```
+xscreensaver
 xkill
 df
 du
