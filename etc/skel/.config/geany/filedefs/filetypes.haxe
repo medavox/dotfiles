@@ -1,0 +1,16 @@
+[build-menu]
+FT_00_LB=_Compile
+FT_00_CM=lime clean neko; lime update neko; lime build neko
+FT_00_WD=%d/..
+FT_02_LB=
+FT_02_CM=
+FT_02_WD=
+EX_01_LB=test
+EX_01_CM=
+EX_01_WD=
+FT_01_LB=Test
+FT_01_CM=lime clean neko; lime test neko
+FT_01_WD=%d/..
+EX_00_LB=_Execute
+EX_00_CM=lime run neko
+EX_00_WD=%d/..
