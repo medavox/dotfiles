@@ -49,6 +49,7 @@ javac
 lvm2
 mate-users-admin
 tarsnap
+cscope
 ```
 
 Fonts
@@ -62,6 +63,7 @@ Small (but useful) utilities
 ----
 
 ```
+tree
 xscreensaver
 xkill
 df
