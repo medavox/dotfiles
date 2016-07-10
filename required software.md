@@ -49,7 +49,6 @@ javac
 lvm2
 mate-users-admin
 tarsnap
-cscope
 ```
 
 Fonts
