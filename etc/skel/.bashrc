@@ -49,10 +49,11 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+#medavox's prompt, for colour and non-colour terminals
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='\A \D{%d %b} \[\033[01;35m\]\w\[\033[00m\] \$> '
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1='\A \D{%d %b} \w \$> '
 fi
 unset color_prompt force_color_prompt
 
