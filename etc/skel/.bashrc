@@ -102,6 +102,7 @@ alias 7z7z="7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on"
 alias mount=mount | column -t
 alias gpom="git push origin master"
 alias gs="git status"
+alias gd="git diff"
 alias gcam="git commit -am "
 alias sz='du -ahd 1 | sort -h'
 alias countfiles='find . -type f | wc -l'
