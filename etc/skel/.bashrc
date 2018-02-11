@@ -20,6 +20,7 @@ export HISTSIZE=9001
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
+
 # make less more friendly for non-text input files, see lesspipe(1)
 #[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
@@ -114,5 +115,6 @@ function search(){
 	cd $OLDPWD
 }
 export PATH=$PATH:$HOME/.cabal/bin
-export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
+#export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
+export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
 export LESS=' -R '
