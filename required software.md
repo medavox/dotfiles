@@ -49,6 +49,7 @@ javac
 lvm2
 mate-users-admin
 tarsnap
+xtiles
 ```
 
 Fonts
