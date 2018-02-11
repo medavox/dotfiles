@@ -97,7 +97,7 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
-
+alias diff='diff --color=auto'
 alias ziptX="ssh -XC -c blowfish-cbc"
 alias 7z7z="7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on"
 alias mount=mount | column -t
