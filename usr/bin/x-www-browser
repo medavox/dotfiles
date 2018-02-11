@@ -1,1 +1,2 @@
-/usr/bin/palemoon
+#!/bin/sh
+palemoon
