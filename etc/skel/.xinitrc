@@ -37,7 +37,12 @@ fi
 #disable annoying terminal window beep
 xset -b
 
-#twm &
+#set keyboard layout (wasn't this done elsewhere once?)
+setxkbmap -layout gb
+
+#force GTK3 to respect system setting for no overlay scrollbars
+GTK_OVERLAY_SCROLLING=0
+
 #xclock -geometry 50x50-1+1 &
 #xterm -geometry 80x50+494+51 &
 #xterm -geometry 80x20+494-0 &
