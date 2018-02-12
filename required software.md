@@ -15,6 +15,7 @@ calibre
 deluge
 dmenu (may be in a package called 'suckless-tools')
 elinks
+engrampa (GUI file archiver with pcmanfm integration)
 eom (eye of MATE)
 flux
 gdebi-gtk
@@ -23,6 +24,7 @@ gimp
 gparted
 gpm
 gsmartcontrol
+gvfs (for rubbish bin & mounted devices list support in pcmanfm)
 htop
 javac
 lvm2
@@ -36,6 +38,7 @@ nano
 ntfs-3g (or whatever the read-write NTFS drivers are called)
 obconf
 openbox
+pacmatic -- performs checks before doing system upgrades with pacman -Syu
 palemoon
 pandoc
 pcmanfm
