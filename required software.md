@@ -43,6 +43,7 @@ palemoon
 pandoc
 pcmanfm
 plzip
+redshift -- replaces flux on arch linux
 sed
 synaptic
 tarsnap
