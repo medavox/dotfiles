@@ -67,6 +67,9 @@ xterm*|rxvt*)
     ;;
 esac
 
+#enable tab completion during sudo
+complete -cf sudo
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -98,6 +101,23 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 alias diff='diff --color=auto'
+alias grep='grep --color=auto'
+
+#remove pager from git branch and git tag, as it's annoying.
+#equivalent to alias 'git branch'='git --nopager branch'
+#but alias doesn't support multiword alias names.
+#also does for git tag
+#the feature i'm undoing here was introduced in git 2.16.0
+git() {
+    if [[ $@ == "branch" ]]; then
+        command git --no-pager branch
+	elif [[ $@ == "tag" ]]; then
+		command git --no-pager tag
+    else
+        command git "$@"
+    fi
+}
+
 alias ziptX="ssh -XC -c blowfish-cbc"
 alias 7z7z="7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on"
 alias mount=mount | column -t
