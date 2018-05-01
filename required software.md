@@ -43,6 +43,7 @@ palemoon
 pandoc
 pcmanfm
 plzip
+pulseaudio-equalizer (available from ppa:webupd8team/pulseaudio-eq)
 redshift -- replaces flux on arch linux
 sed
 synaptic
@@ -54,6 +55,7 @@ vlc
 wget
 xtiles
 youtube-dl
+
 ```
 
 Fonts
