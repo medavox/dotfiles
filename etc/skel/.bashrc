@@ -127,9 +127,13 @@ alias mount=mount | column -t
 alias gpom="git push origin master"
 alias gs="git status"
 alias gd="git diff"
+alias gau='git add -u'
 alias gcam="git commit -am "
+alias gcm='git commit -m'
 alias sz='du -ahd 1 | sort -h'
+alias ghid='git rev-parse --short HEAD'
 alias countfiles='find . -type f | wc -l'
+
 #alias caja='caja --no-desktop'
 alias pv='pv -tra'
 function search(){
