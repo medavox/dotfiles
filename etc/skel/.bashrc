@@ -54,7 +54,7 @@ fi
 source /usr/share/git/git-prompt.sh
 #medavox's prompt, for colour and non-colour terminals
 if [ "$color_prompt" = yes ]; then
-    PS1='\A \D{%d %b} \e[1;35m\w\e[0m \e[33m$(__git_ps1 "[%s]")\e[0m \$> '
+    PS1='\A \D{%d %b} \e[1;34m\w\e[0m \e[33m$(__git_ps1 "[%s]")\e[0m \$> '
 else
     PS1='\A \D{%d %b} \w $(__git_ps1 "[%s]") \$> '
 fi
