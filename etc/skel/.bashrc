@@ -136,6 +136,15 @@ alias sz='du -ahd 1 | sort -h'
 alias ghid='git rev-parse --short HEAD'
 alias countfiles='find . -type f | wc -l'
 
+
+cda () {
+    #keep moving up a dir,
+    # until the current dir contains a file exactly named .git
+    while [ -z $(ls -A | egrep ^\\.git$) ] ; do
+        cd ..
+    done
+}
+
 #alias caja='caja --no-desktop'
 alias pv='pv -tra'
 function search(){
