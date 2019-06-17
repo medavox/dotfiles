@@ -140,6 +140,7 @@ alias countfiles='find . -type f | wc -l'
 cda () {
     #keep moving up a dir,
     # until the current dir contains a file exactly named .git
+    OLDPWD=$(pwd)
     while [ -z $(ls -A | egrep ^\\.git$) ] ; do
         cd ..
     done
