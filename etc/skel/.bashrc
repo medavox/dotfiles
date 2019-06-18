@@ -84,10 +84,8 @@ if [ -x /usr/bin/dircolors ]; then
     #alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
-alias l='ls -hAo'
-
-# Alias definitions.
+# Alias definitions
+####################
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
@@ -102,8 +100,6 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
-alias diff='diff --color=auto'
-alias grep='grep --color=auto'
 
 #remove pager from git branch and git tag, as it's annoying.
 #equivalent to alias 'git branch'='git --nopager branch'
@@ -122,6 +118,9 @@ git() {
 
 #useful command for cloning unapproved pull request;
 #from https://stackoverflow.com/q/14947789/#comment74877951_14969986
+alias diff='diff --color=auto'
+alias grep='grep --exclude-dir=build --exclude-dir=doc --exclude-dir=.gradle --exclude-dir=.git --exclude-dir=build --exclude-dir=.idea --exclude=*.html --exclude=*.iml --color=auto'
+alias l='ls -hAo'
 alias pr = "!f() { git fetch $1 pull/$2/head:pull_$2; git co pull_$2; }; f"
 alias ziptX="ssh -XC -c blowfish-cbc"
 alias 7z7z="7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on"
