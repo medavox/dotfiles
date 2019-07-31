@@ -29,6 +29,7 @@ alias gcm='git commit -m'
 alias sz='du -ahd 1 | sort -h'
 alias ghid='git rev-parse --short HEAD'
 alias countfiles='find . -type f | wc -l'
+alias gwad='./gradlew assembleDebug'
 
 
 cda () {
