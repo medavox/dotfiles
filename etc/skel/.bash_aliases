@@ -44,10 +44,10 @@ cda () {
 
 #alias caja='caja --no-desktop'
 alias pv='pv -tra'
-function search(){
-	cd /
-	find -iname $1 2>/dev/null
-	cd $OLDPWD
+#find, with a useful regex standard and 'permission denied' messages hidden by default
+# takes one argument of a regex in double quotes
+fynd () {
+    find -regextype posix-extended -iregex $1 2> /dev/null
 }
 
 
