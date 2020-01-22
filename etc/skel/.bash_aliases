@@ -16,7 +16,7 @@ alias grep='grep --exclude-dir=build --exclude-dir=doc --exclude-dir=.gradle --e
 alias l='ls -hAo'
 #useful command for cloning unapproved pull request;
 #from https://stackoverflow.com/q/14947789/#comment74877951_14969986
-alias pr = "!f() { git fetch $1 pull/$2/head:pull_$2; git co pull_$2; }; f"
+alias pr="!f() { git fetch $1 pull/$2/head:pull_$2; git co pull_$2; }; f"
 alias ziptX="ssh -XC -c blowfish-cbc"
 alias 7z7z="7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on"
 alias mount=mount | column -t
