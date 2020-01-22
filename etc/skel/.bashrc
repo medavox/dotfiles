@@ -51,7 +51,8 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 #load script for displaying branch name in git repos
-source /usr/share/git/git-prompt.sh
+#source /usr/share/git/git-prompt.sh # found here on Arch
+source /usr/lib/git-core/git-sh-prompt #usually here in debian-based distros
 #medavox's prompt, for colour and non-colour terminals
 if [ "$color_prompt" = yes ]; then
     PS1='\A \D{%d %b} \[\e[1;34m\]\w\[\e[0m\] \[\e[33m\]$(__git_ps1 "[%s]")\[\e[0m\] \$> '
