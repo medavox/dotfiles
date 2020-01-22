@@ -114,6 +114,6 @@ git() {
 # PATH definition
 #################
 export PATH=$PATH:$HOME/.cabal/bin
-#export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
-export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
+export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
+#export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s" #On Fedora/RedHat based distros
 export LESS=' -R '
