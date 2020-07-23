@@ -30,7 +30,7 @@ alias sz='du -ahd 1 | sort -h'
 alias ghid='git rev-parse --short HEAD'
 alias countfiles='find . -type f | wc -l'
 alias gwad='./gradlew assembleDebug'
-
+alias gcr='git commit -c HEAD --reset-author' #reuse last commit message, but set a new timestamp etc
 
 cda () {
     #keep moving up a dir,
