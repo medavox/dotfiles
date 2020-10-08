@@ -55,5 +55,6 @@ fynd () {
 # results are sorted descending by number of occurrences, so the last one has the most
 # supports passing extra arguments to the grep search used, such as -i ignore case
 occurrencesOf() {
-    grep -Irc $1 $2 | grep -v :0 | sort -n -t : -k 2
+    grep -Irc $1 $2 | grep -v :0 | sort -n -t : -k 2 | column -t -s :
 }
+
