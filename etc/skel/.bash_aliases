@@ -42,6 +42,14 @@ cda () {
     OLDPWD=$myOLDPWD
 }
 
+function replace() {
+    if [ $# -lt 2 ] ; then
+        echo "ERROR: you must supply at least 2 arguments."
+        exit 1
+    fi
+    python3 -c 'import sys, re ; print(re.sub(sys.argv[1], sys.argv[2], sys.stdin.read().strip(" \n")))'
+}
+
 #alias caja='caja --no-desktop'
 alias pv='pv -tra'
 #find, with a useful regex standard and 'permission denied' messages hidden by default
