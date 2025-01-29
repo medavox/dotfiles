@@ -36,6 +36,7 @@ alias sod='GIT_SSH_COMMAND="ssh -i ~/.ssh/medavox -o UserKnownHostsFile=/dev/nul
 alias glns='git log --name-status'
 alias replace='python3 /Users/ach/src/replace.py'
 alias glut='git ls-files --others --exclude-standard'
+alias studio-diff='/Applications/Android\ Studio.app/Contents/MacOS/studio diff'
 
 cda () {
     #keep moving up a dir,
