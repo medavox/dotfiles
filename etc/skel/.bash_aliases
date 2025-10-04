@@ -1,4 +1,3 @@
-
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -36,7 +35,7 @@ cda () {
     #keep moving up a dir,
     # until the current dir contains a file exactly named .git
     myOLDPWD=$(pwd)
-    while [ -z $(ls -A | egrep ^\\.git$) ] ; do
+    while [ -z $( ls -A | grep -E '^\.git$' ) ] ; do
         cd ..
     done
     OLDPWD=$myOLDPWD
@@ -65,4 +64,3 @@ fynd () {
 occurrencesOf() {
     grep -Irc $1 $2 | grep -v :0 | sort -n -t : -k 2 | column -t -s :
 }
-
